@@ -1,25 +1,27 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
+
 using namespace std;
 
-class List {
+
+class Database {
     private:
     protected:
+
     public:
     // constructor and destructor
-    List() {
+    Database() {
         // constructor
     }
-    ~List() {
+    ~Database() {
         // destructor
     }
     // vector<datatype> name;
     vector<string> list;
     string name;
 
-    // prototype IDs to declare but not build functions
-    void print_menu();
-    void print_list();
-    void add_item();
-    void delete_item();
+    void write(vector<string> list);
+    void read();
+
 };
