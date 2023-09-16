@@ -6,9 +6,10 @@ int main(int arg_count, char *args[]) {
     Database data;
     if ( arg_count > 1 ) {
         simpleList.name = string(args[1]);
+        simpleList.mainList = data.read();
+        bool userFound = simpleList.find_userList();
         simpleList.print_menu();
-        data.write(simpleList.list);
-        data.read();
+        data.write(simpleList.mainList);
     } 
     else {
         cout << "Username not supplied... exiting the program" << endl;    
