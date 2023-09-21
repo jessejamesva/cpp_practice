@@ -4,11 +4,11 @@
 
 # Compiler settings - Can be customized.
 CC = g++
-CXXFLAGS = -std=c++11 -Wall -g
+CXXFLAGS = -std=c++11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = SimpleList
+APPNAME = Login
 EXT = .cpp
 SRCDIR = src
 OBJDIR = obj
